@@ -22,9 +22,9 @@ Another finished part is input validation and guardrails. On the backend, room n
 
 The frontend workflow is clean and user-friendly. It starts in an inbox-style screen showing chat previews, unread badges, and contact chips. Selecting a chat opens a dedicated conversation view with message bubbles, timestamps, and a composer input. There is a “Back” action to return to inbox, automatic scroll-to-latest behavior, and disabled send action when the socket is offline. A generated guest identity like Guest-1234 is assigned per session. The UI includes fallback dummy messages per room so the interface remains populated and testable even when no server history exists yet.
 
-How it runs: dependencies are installed with npm install, and development mode is started with npm run dev. That command uses concurrently to launch both services at once: Vite frontend at http://localhost:5173 and WebSocket server at ws://localhost:8080. The frontend can also target a different socket endpoint using the optional environment variable VITE_WS_URL. For production-style frontend output, npm run build generates static assets and npm run preview serves them for validation.
+# How it runs: dependencies are installed with npm install, and development mode is started with npm run dev. That command uses concurrently to launch both services at once: Vite frontend at http://localhost:5173 and WebSocket server at ws://localhost:8080. The frontend can also target a different socket endpoint using the optional environment variable VITE_WS_URL. For production-style frontend output, npm run build generates static assets and npm run preview serves them for validation.
 
-Languages and technologies used are:
+# Languages and technologies used are:
 
 JavaScript (client and server logic)
 JSX (React component rendering)
@@ -32,4 +32,12 @@ CSS (responsive custom styling and animations)
 HTML (Vite entry template)
 Node.js runtime + WebSocket protocol (ws package)
 Vite tooling and React DOM rendering
-In summary, Chatty is already a working real-time chat system with room support, live updates, status awareness, responsive UI, and message history in memory. It is not yet a fully production-hardened SaaS product (no authentication, no database persistence, no horizontal scaling layer), but the foundation is solid and clearly structured for future expansion.
+
+In summary, Chatty is already a working real-time chat system with room support, live updates, status awareness, responsive UI, and message history in memory.
+It is not yet a fully production-hardened SaaS product (no authentication, no database persistence, no horizontal scaling layer), but the foundation is solid and clearly structured for future expansion.
+
+# OUTPUT
+
+<img width="1919" height="920" alt="Image" src="https://github.com/user-attachments/assets/6d7eabbc-4495-42e6-8ea1-782cf3001b16" />
+
+<img width="1919" height="918" alt="Image" src="https://github.com/user-attachments/assets/1eb30d1c-4474-4be6-8365-b4ac4b40cfc0" />
